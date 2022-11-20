@@ -1,24 +1,16 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+1. To generate a migration file <br>
+`rails generate migration create_users` 
 
-Things you may want to cover:
+2. To run the migration <br>
+`rails db:migrate`
 
-* Ruby version
+3. To undo/rollback last migration <br>
+`rails db:rollback`
 
-* System dependencies
+4. To create a controller <br>
+`rails generate controller users`
 
-* Configuration
 
-* Database creation
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
