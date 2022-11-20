@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
   resources :articles
 
-  resources :users , only: [:create]
+  resources :users
+
+  post 'login', to: 'sessions#create'
+  delete 'logout', to: 'sessions#delete'
 
 end
