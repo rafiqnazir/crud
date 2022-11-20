@@ -12,7 +12,8 @@ class ArticlesController < ApplicationController
     end
 
     def create
-        article = Article.new(title: params[:title], description: params[:description])
+
+        article = Article.new(title: params[:title], description: params[:description],user_id: User.first.id)
         if article.save
             render json: {article: article}
         else

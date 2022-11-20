@@ -12,5 +12,16 @@
 4. To create a controller <br>
 `rails generate controller users`
 
+5. Add new column to a table
+
+`rails generate migration add_user_to_articles`
+```rails
+class AddUserToArticles < ActiveRecord::Migration[7.0]
+  def change
+    add_column :articles, :user_id, :int
+  end
+end
+```
+
 
 
