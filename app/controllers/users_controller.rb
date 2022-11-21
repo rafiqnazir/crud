@@ -13,6 +13,7 @@ class UsersController < ApplicationController
     def create
         user = User.new(username: params[:username], email: params[:email],password: params[:password])
         if user.save
+            session[:user_id] = user.id
             render json: {user: user}
         else
             render json: {error: user.errors.full_messages}

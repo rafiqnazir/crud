@@ -90,6 +90,7 @@ GEM
       irb (>= 1.3.6)
       reline (>= 0.3.1)
     erubi (1.11.0)
+    ffi (1.13.1-x64-mingw32)
     globalid (1.0.0)
       activesupport (>= 5.0)
     i18n (1.12.0)
@@ -216,8 +217,10 @@ DEPENDENCIES
   byebug (~> 11.1)
   capybara
   debug
+  ffi (~> 1.13.1)
   importmap-rails
   jbuilder
+  minitest
   puma (~> 5.0)
   rails (~> 7.0.4)
   selenium-webdriver

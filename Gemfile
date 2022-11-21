@@ -74,3 +74,7 @@ group :test do
 end
 
 gem "byebug", "~> 11.1", :groups => [:development, :test]
+
+gem "minitest"
+
+gem "ffi", "~> 1.13.1"

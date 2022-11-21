@@ -13,7 +13,14 @@ class SessionsController < ApplicationController
     def delete
         session[:user_id] = nil
         render json: {message: 'User Logged Out...'}
+    end
 
+    def current_session
+        if logged_in?
+            render json: {session: current_user}
+        else
+            render json: {message: "No used logged in"}
+        end
     end
 
 end
